@@ -1,0 +1,21 @@
+{
+  "name": "react-touchable",
+  "version": "1.0.0",
+  "description": "Touch bindings in react",
+  "main": "Touchable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "touch",
+    "react",
+    "mobile",
+    "ios",
+    "android"
+  ],
+  "author": "Josh Perez <josh@goatslacker.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.11.2"
+  }
+}
