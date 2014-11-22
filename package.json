@@ -20,7 +20,7 @@
     "type": "git",
     "url": "http://github.com/dogfessional/react-touchable.git"
   },
-  "dependencies": {
-    "react": "^0.12.1"
+  "peerDependencies": {
+    "react": ">=0.12.x"
   }
 }
