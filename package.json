@@ -21,6 +21,6 @@
     "url": "http://github.com/dogfessional/react-touchable.git"
   },
   "dependencies": {
-    "react": "^0.11.2"
+    "react": "^0.12.1"
   }
 }

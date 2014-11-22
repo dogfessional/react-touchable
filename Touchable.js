@@ -49,17 +49,17 @@ var Touchable = React.createClass({
     var classes = React.addons.classSet({
       active: this.state.active
     })
-    if (typeof document !== 'undefined' && 'ontouchstart' in document.documentElement) {
-      return this.transferPropsTo(React.DOM.span({
-        className: classes,
-        onTouchStart: this.touchStart,
-        onTouchEnd: this.touchEnd
-      }, this.props.children))
-    } else {
-      return this.transferPropsTo(React.DOM.span({
-        onClick: this.props.onTap
-      }, this.props.children))
+    var properties = {
+      className: classes
     }
+    if (typeof document !== 'undefined' && 'ontouchstart' in document.documentElement) {
+      properties.onTouchStart = this.touchStart
+      properties.onTouchEnd = this.touchEnd
+    } else {
+      properties.onClick = this.props.onTap
+    }
+
+    return React.createElement('span', properties, this.props.children)
   }
 })
 
