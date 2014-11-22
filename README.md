@@ -13,7 +13,7 @@
         return (
           <Touchable onTap={this.handleClick}>
             <div>
-              This element can be swiped
+              This element can be tapped or clicked
             </div>
           </Touchable>
         )
